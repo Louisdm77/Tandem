@@ -3,7 +3,7 @@ body {
 }
 .top {
   height: 400px;
-  background-image: url("trailer.jpg");
+  background-image: url("../img/trailer.jpg");
   background-position: center;
   color: white;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
 }
 .abt {
   height: 400px;
-  background-image: url("trailer2.jpg");
+  background-image: url("../img/trailer2.jpg");
   background-position: center;
   color: white;
   background-repeat: no-repeat;
