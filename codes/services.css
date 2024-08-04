@@ -1,6 +1,6 @@
 .ab {
   height: 400px;
-  background-image: url("sales.jpg");
+  background-image: url("../img/sales.jpg");
   background-position: center;
   color: white;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 }
 .too {
   height: 400px;
-  background-image: url("truck2.avif");
+  background-image: url("../img/truck2.avif");
   background-position: center;
   color: white;
   background-repeat: no-repeat;
