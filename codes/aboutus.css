@@ -1,0 +1,64 @@
+body {
+  padding: 20px;
+}
+.top {
+  height: 400px;
+  background-image: url("trailer.jpg");
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+.abt {
+  height: 400px;
+  background-image: url("trailer2.jpg");
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.tes {
+  margin-top: 40px;
+  background-color: rgba(185, 173, 173, 0.3);
+}
+.why i {
+  color: brown;
+  margin-right: 40px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.why p,
+.why ul {
+  font-size: small;
+}
+.cal {
+  padding: 20px;
+  background-color: rgba(185, 173, 173, 0.3);
+}
+.cal i {
+  color: brown;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.arr {
+  font-size: 15px !important;
+  margin-left: 20px;
+  color: black !important;
+}
+.tan a {
+  text-decoration: none;
+  color: white;
+}
+.tan ul {
+  list-style-type: none;
+  color: white;
+  padding-left: 0;
+}
