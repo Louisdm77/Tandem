@@ -1,17 +1,36 @@
 body {
-  background: linear-gradient(to right, #c5f2fa, #fabfd7);
+  background: linear-gradient(to right, #c5f2fa, #f1d392);
   padding: 40px;
   color: black;
+  font-family: "Lato", sans-serif !important;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
 .serve i,
 i {
   color: brown;
   font-size: 40px;
 }
+.serve h4 {
+  font-size: 30px !important;
+}
 .serve .col {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  margin-top: 10px;
+  padding: 20px;
+  margin-right: 10px;
   background-color: white;
+}
+.nav-item a {
+  font-weight: 800;
+  font-size: 20px;
 }
 .accordion-item {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -22,7 +41,7 @@ i {
   margin-bottom: 20px;
 }
 .serve {
-  background: linear-gradient(to bottom, #fdedf3, white);
+  background: linear-gradient(to bottom, #f1d392, white);
 }
 .why i {
   margin-right: 30px;
@@ -47,6 +66,12 @@ ul a {
   text-decoration: none;
   color: white;
 }
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto !important;
+    width: 45% !important;
+  }
+}
 @media screen and (max-width: 610px) {
   .top {
     font-size: 40px !important;
@@ -60,11 +85,32 @@ ul a {
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1182px) {
   .toppic {
     display: none !important;
   }
   .toptext {
     width: 100% !important;
   }
+}
+@media (min-width: 1250px) {
+  .col-lg-2 {
+    flex: 0 0 auto !important;
+    width: 16.66666667% !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25% !important;
+  }
+}
+@media (min-width: 768px) {
+  .toppic {
+    flex: 0 0 auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (min-width: 900px) {
 }

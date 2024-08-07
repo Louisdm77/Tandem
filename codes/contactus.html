@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="aboutus.css" />
     <link rel="stylesheet" href="services.css" />
     <script
@@ -17,6 +29,22 @@
     />
     <title>Contact us</title>
     <style>
+      .col p {
+        font-size: 15px;
+      }
+      body {
+        padding: 40px;
+        color: black;
+        font-family: "Lato", sans-serif !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Archivo Narrow", sans-serif;
+      }
       .card {
         width: fit-content;
         text-align: center;
@@ -57,22 +85,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-7 ms-auto mb-2 mb-lg-0">
-            <li class="nav-item fw-bold mx-6">
-              <a class="nav-link active" aria-current="page" href="index.html"
+            <li class="nav-item fw-bold mx-4">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
-            <li class="nav-item fw-bold mx-6">
+            <li class="nav-item fw-bold mx-4">
               <a class="nav-link text-dark" href="aboutus.html">About Us</a>
             </li>
-            <li class="nav-item fw-bold mx-6">
+            <li class="nav-item fw-bold mx-4">
               <a class="nav-link text-dark" href="services.html">Services</a>
             </li>
-            <li class="nav-item fw-bold mx-6">
+            <li class="nav-item fw-bold mx-4">
               <a class="nav-link text-dark" href="contactus.html">Contact Us</a>
             </li>
 
-            <li class="nav-item mx-6">
+            <li class="nav-item mx-4">
               <button
                 type="button"
                 class="btn btn-primary fw-bold"
@@ -144,29 +175,48 @@
       <h3 style="text-align: center; margin-top: 20px">Write your message</h3>
       <div
         style="
-          width: 60%;
+          width: 70%;
           margin: auto;
           background-color: white;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         "
       >
-        <div class="row mt-5 ms-5">
-          <div class="col"><input type="text" placeholder="Full Name*" /></div>
-          <div class="col"><input type="email" placeholder="Email*" /></div>
-        </div>
-        <div class="row mt-5 ms-5">
-          <div class="col"><input type="text" placeholder="phone*" /></div>
-          <div class="col"><input type="email" placeholder="City*" /></div>
-        </div>
-        <div class="col mt-5 ms-5">
-          <input type="email" placeholder="City*" style="width: 82%" />
-        </div>
-        <div class="col mt-5 ms-5" style="margin-bottom: 40px">
-          <input
-            type="email"
-            placeholder="City*"
-            style="width: 82%; height: 150px"
-          />
+        <div style="width: 80%; margin: auto; margin-top: 20px">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="text" placeholder="Full Name*" style="width: 90%" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="email" placeholder="Email*" style="width: 90%" />
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="text" placeholder="phone*" style="width: 90%" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="email" placeholder="City*" style="width: 90%" />
+            </div>
+          </div>
+          <div class="col mt-5">
+            <input type="email" placeholder="Subject*" style="width: 95%" />
+          </div>
+          <div class="col mt-5" style="margin-bottom: 40px">
+            <input
+              type="email"
+              placeholder="City*"
+              style="width: 95%; height: 150px"
+            />
+          </div>
+          <div style="margin: auto; width: fit-content">
+            <button
+              type="button"
+              class="btn btn-primary fw-bold mb-5"
+              style="background-color: #b45924; padding: 10px; border: none"
+            >
+              Send Message
+            </button>
+          </div>
         </div>
       </div>
     </div>
