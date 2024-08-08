@@ -3,6 +3,10 @@ body {
   padding: 40px;
   color: black;
   font-family: "Lato", sans-serif !important;
+  transition: ease;
+}
+.serve h5 {
+  font-weight: 900;
 }
 h1,
 h2,
@@ -43,6 +47,7 @@ i {
 .serve {
   background: linear-gradient(to bottom, #f1d392, white);
 }
+
 .why i {
   margin-right: 30px;
   margin-left: 20px;
@@ -66,6 +71,22 @@ ul a {
   text-decoration: none;
   color: white;
 }
+.log {
+  /* opacity: 0; */
+  margin-right: 30px !important;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  animation-duration: 5s;
+  transition: ease-in;
+}
+.why,
+.serve,
+.testi {
+  transition: ease-in;
+  animation-duration: 3s;
+  animation-delay: 1ms;
+}
+
 @media (min-width: 768px) {
   .col-md-6 {
     flex: 0 0 auto !important;

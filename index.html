@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
     <link rel="stylesheet" href="tandem.css" />
     <script
       src="https://kit.fontawesome.com/88871d979c.js"
@@ -25,6 +26,10 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Tandem</title>
   </head>
@@ -85,7 +90,9 @@
       </div>
     </nav>
     <div class="row mt-5">
-      <div class="col-sm-12 col-md-12 col-lg-6 toptext mb-5">
+      <div
+        class="col-sm-12 col-md-12 col-lg-6 toptext mb-5 animate__animated animate__fadeInRight"
+      >
         <h1 class="top mt-4" style="font-size: 80px; font-weight: 600">
           We can move you <br />
           everywhere.
@@ -107,7 +114,9 @@
           Book Now
         </button>
       </div>
-      <div class="col-sm-0 col-md-0 col-lg-6 toppic">
+      <div
+        class="col-sm-0 col-md-0 col-lg-6 toppic animate__animated animate__fadeInRight"
+      >
         <img
           class="img-fluid"
           src="./img/courier22.png"
@@ -120,9 +129,9 @@
       <h3 style="text-align: center; font-weight: bold">Our Clients</h3>
       <div>
         <div
-          class="row"
+          class="row log animate_animated animate__zoomInDown"
           style="
-            height: 60px;
+            height: fit-content;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -185,10 +194,10 @@
         </div>
       </div>
     </div>
-    <div style="margin-top: 40px">
+    <div style="margin-top: 40px" class="">
       <h3 style="text-align: center; font-weight: bold">Our Services</h3>
       <div
-        class="row serve"
+        class="row serve animate__animated"
         style="
           padding: 20px;
           margin-top: 30px;
@@ -200,7 +209,7 @@
       >
         <div class="col col-sm-12 col-md-6 col-lg-2">
           <i class="fa-sharp fa-solid fa-building"></i>
-          <h4>Relocation and Logistics</h4>
+          <h5>Relocation and Logistics</h5>
           <p style="text-align: start">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             nisi eius rerum, dolorum atque totam unde voluptatem exercitationem
@@ -209,7 +218,7 @@
         </div>
         <div class="col col-sm-12 col-md-6 col-lg-2">
           <i class="fa-sharp fa-solid fa-building"></i>
-          <h4>Courier and Delivery</h4>
+          <h5>Courier and <br />Delivery</h5>
           <p style="text-align: start">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             nisi eius rerum, dolorum atque totam unde voluptatem exercitationem
@@ -218,10 +227,7 @@
         </div>
         <div class="col col-sm-12 col-md-6 col-lg-2">
           <i class="fa-solid fa-truck"></i>
-          <h4>
-            Transportation <br />
-            Services
-          </h4>
+          <h5>Transportation Services</h5>
           <p style="text-align: start">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             nisi eius rerum, dolorum atque totam unde voluptatem exercitationem
@@ -230,7 +236,7 @@
         </div>
         <div class="col col-sm-12 col-md-6 col-lg-2">
           <i class="fa-sharp fa-solid fa-car"></i>
-          <h4>Car sales and pick-up</h4>
+          <h5>Car sales and pick-up</h5>
           <p style="text-align: start">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
             nisi eius rerum, dolorum atque totam unde voluptatem exercitationem
@@ -242,7 +248,7 @@
     <div style="background-color: white">
       <div style="padding-top: 70px">
         <h3 style="text-align: center; font-weight: 700">Why Choose Us</h3>
-        <div class="row why" style="margin-top: 30px">
+        <div class="row why animate__animated" style="margin-top: 30px">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <img
               class="img-fluid cou"
@@ -319,8 +325,15 @@
           +1-23-456-798
         </h3>
       </div>
-      <div style="margin-top: 30px; padding: 10px; text-align: center">
-        <h3>Testimonials</h3>
+      <div
+        class="testi"
+        style="
+          margin-top: 30px;
+          padding: 10px;
+          text-align: center animate__animated;
+        "
+      >
+        <h3 class="text-center">Testimonials</h3>
         <div class="container">
           <div class="row">
             <div
@@ -742,7 +755,7 @@
             <h4>Services</h4>
             <ul>
               <li><a href="">Truck and Haulage</a></li>
-              <li><a href="">Relocatio and Logistics</a></li>
+              <li><a href="">Relocation and Logistics</a></li>
               <li><a href="">Car rental</a></li>
               <li><a href="">Courier Services</a></li>
             </ul>
@@ -759,6 +772,17 @@
         </div>
       </div>
     </div>
+    <script>
+      inView(".serve", { threshold: 1 }).on("enter", (el) => {
+        el.classList.add("animate__fadeInRight");
+      });
+      inView(".why", { threshold: 1 }).on("enter", (el) => {
+        el.classList.add("animate__backInUp");
+      });
+      inView(".testi", { threshold: 1 }).on("enter", (el) => {
+        el.classList.add("animate__bounceIn");
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
